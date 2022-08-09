@@ -1,0 +1,94 @@
+.footer {
+  &-main {
+    background-color: $sec-bg;
+    padding: 70px 100px 80px 135px;
+  }
+  &-header {
+    margin-bottom: 15px;
+    color: white;
+  }
+  &-desc {
+    color: $sec-gray-1;
+    max-width: 338px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  &-button {
+    display: inline-block;
+    padding: 23px;
+    margin-left: 513px;
+    margin-bottom: 80px;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-website {
+    max-width: 280px;
+  }
+  &-website > p {
+    text-align: left;
+    color: $sec-gray-1;
+    padding: 15px 0px;
+  }
+  &-website > div {
+    padding-bottom: 15px;
+  }
+  &-about,
+  &-Resouces,
+  &-more {
+    text-align: left;
+    color: $sec-white;
+  }
+  &-list {
+    padding-top: 22px;
+    color: $sec-gray-1;
+    text-align: left;
+  }
+  &-item {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: 0.25s;
+  }
+  &-item:hover {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer {
+    &-main {
+      margin-top: 85px;
+      padding: 0;
+    }
+
+    &-header {
+      padding-top: 80px;
+      font-size: 30px;
+      line-height: auto;
+      width: 270px;
+      margin: 0 auto;
+      padding-bottom: 12px;
+    }
+    &-button {
+      margin-left: 98px;
+    }
+    &-website {
+      display: none;
+    }
+    &-info {
+      // display: none;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+    .footer-menu {
+      width: 25px;
+      height: 25px;
+      margin-left: 300px;
+      padding-bottom: 20px;
+    }
+    .footer-menu > img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

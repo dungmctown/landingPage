@@ -1,0 +1,105 @@
+.library {
+  &-main {
+    background-color: $sec-white-2;
+    padding: 10px 215px 150px 215px;
+  }
+  &-title {
+    color: $sec-bg;
+    margin-bottom: 10px;
+  }
+  &-desc {
+    color: $sec-gray-2;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  &-button {
+    &-nav {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 85px;
+    }
+    &-item {
+      font-weight: 600;
+      font-size: 20.1926px;
+      line-height: 25px;
+      text-align: center;
+      padding: 12px 25px;
+      color: $sec-bg;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+  }
+  &-box {
+    display: flex;
+    gap: 30px;
+    &-item {
+      border-radius: 18px;
+      transition: 0.25s;
+    }
+    &-item:hover {
+      background-color: $sec-white;
+    }
+    &-image {
+      border-radius: 18px;
+      margin-bottom: 15px;
+    }
+    &-info {
+      padding-left: 40px;
+      &-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17.6685px;
+        line-height: 22px;
+        color: $pri-green;
+        margin-bottom: 8px;
+      }
+      &-desc {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+        max-width: 200px;
+        padding-bottom: 25px;
+      }
+    }
+    margin-bottom: 38px;
+  }
+  &-button {
+    display: inline;
+    margin-left: 406px;
+    padding: 15px 30px;
+  }
+  &-button > * {
+    padding-left: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .library {
+    &-main {
+      padding: 0;
+    }
+    &-title {
+      padding-top: 70px;
+      font-size: 30px;
+      line-height: 40px;
+      width: 262px;
+      margin: 0 auto;
+    }
+    &-desc {
+      padding-top: 10px;
+      font-weight: 600;
+    }
+    &-box {
+      flex-direction: column;
+      padding-left: 30px;
+      margin-bottom: 50px;
+    }
+    &-button {
+      width: 300px;
+      margin-left: 30px;
+      padding: 15px 100px;
+    }
+  }
+}

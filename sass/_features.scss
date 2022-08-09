@@ -1,0 +1,56 @@
+.features {
+  &-main {
+    background-color: $sec-white-2;
+    padding-top: 66px;
+    padding-right: 140px;
+    display: flex;
+    gap: 85px;
+  }
+  &-title {
+    margin-top: 140px;
+    &-header {
+      margin-bottom: 18px;
+      color: $sec-bg;
+    }
+    &-desc {
+      width: 508px;
+      color: $sec-gray-2;
+      margin-bottom: 28px;
+    }
+    &-more {
+      width: 416px;
+    }
+  }
+  &-button {
+    margin-top: 50px;
+    padding: 16px 58px;
+    display: inline-block;
+  }
+  &-title > * {
+    text-align: left !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .features {
+    &-main {
+      flex-direction: column;
+      gap: 64px;
+    }
+    &-image {
+    }
+    &-image > img {
+      width: 350px;
+      height: 370px;
+    }
+    &-info {
+      width: 327px;
+      padding-left: 30px;
+    }
+    &-title > div {
+      width: 327px;
+    }
+    &-button {
+      display: block;
+    }
+  }
+}

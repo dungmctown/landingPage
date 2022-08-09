@@ -1,0 +1,61 @@
+.businessTools {
+  &-main {
+    background-color: $sec-bg;
+    padding: 60px 92px 70px 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-title {
+    margin-top: 77px;
+    width: 585px;
+  }
+  &-title > * {
+    text-align: left;
+  }
+  &-header {
+    color: $sec-white;
+    margin-bottom: 10px;
+  }
+  &-desc {
+    color: $sec-gray-1;
+    margin-bottom: 40px;
+    width: 365px;
+  }
+  &-button {
+    display: inline-block;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .businessTools {
+    &-main {
+      flex-direction: column;
+      padding-top: 60px;
+      padding-left: 21px;
+    }
+    &-title {
+      margin-bottom: 60px;
+    }
+    &-header {
+      width: 255px;
+      font-size: 30px;
+      line-height: 40px;
+      margin-left: 60px;
+    }
+    &-desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      width: 286px;
+      margin-left: 60px;
+      margin-bottom: 60px;
+    }
+    &-button {
+      padding: 21px 100px;
+    }
+    &-image > img {
+      width: 349px;
+      height: 290px;
+    }
+  }
+}

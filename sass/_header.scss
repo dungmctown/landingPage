@@ -1,0 +1,175 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  &-main {
+    height: 900px;
+    background-color: #1e1e1e;
+    display: block;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  &-nav {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-logo {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  &-list {
+    display: flex;
+    gap: 38px;
+  }
+  &-item > a {
+    color: $sec-gray-1;
+    position: relative;
+  }
+  &-item > a:hover {
+    color: $sec-white;
+    cursor: pointer;
+  }
+  &-item > a:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+    left: 2px;
+    top: 22px;
+    transition: 0.25s;
+  }
+  &-item > a:hover:before {
+    width: 98%;
+  }
+  &-login {
+    transition: 0.25s;
+    color: $sec-white;
+    font-weight: 400;
+    padding: 9px 25px;
+    background-color: $sec-gray-1;
+    border-radius: 6px;
+    opacity: 0.8;
+  }
+  &-login:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  &-slogan {
+    margin-top: 83px !important;
+    width: 837px;
+    margin: 0 auto;
+  }
+  &-button {
+    margin-top: 59px;
+    justify-content: center;
+    display: flex;
+    gap: 28px;
+    &-getStarted {
+      padding: 15px 27px 15px 27px;
+      cursor: pointer;
+    }
+
+    &-info {
+      color: $sec-white;
+      width: 170px;
+      height: 48px;
+      display: flex;
+      gap: 16px;
+      cursor: pointer;
+    }
+    &-info:hover {
+      background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    &-info > div {
+      margin: auto 0;
+    }
+  }
+  &-image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+  }
+  &-menu {
+    display: none;
+    width: 25px;
+    height: 25px;
+  }
+  &-menu > img {
+    width: 25px;
+    height: 25px;
+  }
+}
+// @media screen and (max-width: 800px) {
+
+// }
+@media screen and (max-width: 375px) {
+  .header {
+    &-main {
+      height: 700px;
+      position: relative;
+    }
+    &-nav {
+      padding-top: 75px;
+      padding-left: 15px;
+      justify-content: left;
+      gap: 40px;
+    }
+    &-list {
+      margin-top: 35px;
+      position: absolute;
+      flex-direction: column;
+      display: none;
+      background-color: $sec-white;
+      width: 95%;
+      z-index: 1;
+      gap: 0px;
+      transition: all 0.25s;
+      border-radius: 10px;
+    }
+    &-item {
+      padding: 15px 0px 15px 15px;
+      border-radius: 10px;
+    }
+    &-slogan {
+      max-width: 281px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0px;
+      padding-left: 50px;
+    }
+    &-button {
+      justify-content: left;
+      padding-left: 90px;
+      &-getStarted {
+        width: 150px;
+      }
+      &-info > div {
+        display: none;
+      }
+    }
+    &-image > img {
+      max-width: 341px;
+      max-height: 175px;
+    }
+    &-menu {
+      position: absolute;
+      cursor: pointer;
+      display: block;
+      right: 10px;
+    }
+    &-menu > img {
+    }
+  }
+}

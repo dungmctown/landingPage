@@ -1,0 +1,139 @@
+.testmonoials {
+  &-main {
+    background-color: $sec-white-2;
+    padding: 140px;
+    position: relative;
+  }
+  &-slogan {
+    max-width: 600px;
+    color: $sec-bg;
+    margin: 0 auto;
+    padding-bottom: 75px;
+  }
+  &-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-info {
+    width: 570px;
+    padding-top: 50px;
+  }
+  &-quote {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    color: $sec-bg;
+    margin-bottom: 27px;
+  }
+  &-author {
+    &-name {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17.6685px;
+      line-height: 22px;
+      color: $sec-gray-3;
+      margin-bottom: 15px;
+    }
+    &-star {
+      margin-bottom: 9px;
+    }
+    &-rating {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17.6685px;
+      line-height: 22px;
+      color: $sec-bg;
+    }
+  }
+  &-button {
+    display: flex;
+    gap: 5px;
+    justify-content: right;
+    &-left,
+    &-right {
+      width: 60px;
+      height: 60px;
+      border-radius: 15px;
+      position: relative;
+      opacity: 0.8;
+    }
+    &-left:hover,
+    &-right:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    &-left {
+      background-color: #dcd4c5;
+    }
+    &-right {
+      background-color: $pri-green;
+      color: white;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    top: 606px;
+    left: 1101px;
+  }
+}
+.icon {
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 375px) {
+  .testmonoials {
+    &-main {
+      padding-top: 60px;
+      padding-left: 30px;
+      padding-bottom: 0px;
+    }
+    &-slogan {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 38px;
+      width: 240px;
+      margin-bottom: 14px;
+      text-align: left;
+      padding-bottom: 0;
+    }
+    &-group {
+      flex-direction: column-reverse;
+      gap: 42px;
+    }
+    &-info {
+      padding-top: 0;
+    }
+    &-quote {
+      font-size: 14px;
+      line-height: 24px;
+      width: 317px;
+    }
+    &-author {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &-rating {
+      font-weight: 400;
+      font-size: 17.6685px;
+      line-height: 22px;
+    }
+    &-image > img {
+      width: 317px;
+      height: 300px;
+    }
+    &-button {
+      width: 315px;
+      margin-top: 50px;
+    }
+    &-icon {
+      display: none;
+    }
+  }
+}

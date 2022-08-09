@@ -1,0 +1,85 @@
+//color
+//primary
+$pri-lenier: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+$pri-green: #00bd82;
+$pri-darkYellow: #dfff1b;
+$pri-yellow: #e2f471;
+//text-color
+$sec-gray-1: #b5b3af;
+$sec-gray-2: #545454;
+$sec-gray-3: #7f7d79;
+$sec-gray-4: rgba(0, 0, 0, 0.08);
+$sec-bg: #1e1e1e;
+$sec-white: #ffffff;
+$sec-white-2: #fdf9f1;
+
+//text
+.text-linear {
+  background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+//heading
+.textH1 {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 62px;
+  text-align: center;
+}
+.textH2 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: auto;
+  text-align: center;
+}
+.textH3 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: auto;
+  text-align: center;
+}
+.textH4 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: auto;
+  text-align: center;
+}
+//paragraph
+.textPara16 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.textP20 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: auto;
+  text-align: center;
+}
+.textPara18 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+.textP18 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: center;
+}
+//button
+.buttonMain {
+  background-color: $pri-green;
+  border-radius: 10px;
+  color: $sec-white;
+  transition: 0.25s;
+  opacity: 0.8;
+}
+.buttonMain:hover {
+  cursor: pointer;
+  opacity: 1;
+}

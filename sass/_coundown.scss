@@ -1,0 +1,32 @@
+.countDown {
+  padding-top: 360px;
+  background-color: $sec-white-2;
+  max-width: 1440px;
+  margin: 0 auto;
+  .counDown-main {
+    background-color: $pri-yellow;
+  }
+  &-list {
+    display: flex;
+    padding: 60px 200px;
+    gap: 145px;
+  }
+  &-header {
+    margin-bottom: 22px;
+  }
+  &-desc {
+    color: #4f4d49;
+  }
+}
+@media screen and (max-width: 375px) {
+  .countDown {
+    padding-top: 136px;
+    &-main {
+    }
+    &-list {
+      flex-direction: column;
+      padding: 60px 60px 80px 60px;
+      gap: 64px;
+    }
+  }
+}
